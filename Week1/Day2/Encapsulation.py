@@ -1,7 +1,7 @@
 class Atm:
 
     #Static/Class Variable : Have same value for all obj
-    counter=0
+    __counter=0
 
     def __init__(self):
 
@@ -14,8 +14,8 @@ class Atm:
 
         self.__pin=""
         self.__balance=0
-        self.sno=Atm.counter
-        Atm.counter+=1
+        self.sno=Atm.__counter
+        Atm.__counter+=1
 
         self.__menu()
 
@@ -42,6 +42,17 @@ class Atm:
     # Getter and Setter are made to encapsulate some information from the user so that no unwanted modification is carried out over data+mehtods of a particular class.
     # Its not like private ata cannot be accessed (_class__method e.g. _Atm__pin) by this they can be accessed but not preffered.
         
+    @staticmethod
+    def get_counter():
+        return Atm.__counter
+    
+    @staticmethod
+    def set_counter(new):
+        if type(new)==int:
+            Atm.counter==new
+        else:
+            print("Not Allowed")
+
     def get_pin(self):
         return self.__pin
     
