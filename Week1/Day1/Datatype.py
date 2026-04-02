@@ -2,6 +2,10 @@ class Fraction:
     def __init__(self,n,d):
         self.num=n
         self.den=d
+
+# Few magic methods in python which help to create our own datatype
+# Magic methods are called automatically with some triggers and can't be called by any method you create. 
+
     def __str__(self):
         return f"Fraction is {self.num}/{self.den}"
     def __add__(self,other):

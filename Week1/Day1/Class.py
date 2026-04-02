@@ -1,5 +1,7 @@
 class Atm:
 
+# Constructor : Calls Automatically once object of a class is created.
+  
     def __init__(self):
         self.pin=""
         self.balance=0
