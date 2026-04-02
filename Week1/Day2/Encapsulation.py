@@ -41,7 +41,7 @@ class Atm:
 
     # Getter and Setter are made to encapsulate some information from the user so that no unwanted modification is carried out over data+mehtods of a particular class.
     # Its not like private ata cannot be accessed (_class__method e.g. _Atm__pin) by this they can be accessed but not preffered.
-        
+    # self is not used in static methods as they are not referenced with an obj of class, they are irrespective of obj.
     @staticmethod
     def get_counter():
         return Atm.__counter
@@ -49,7 +49,7 @@ class Atm:
     @staticmethod
     def set_counter(new):
         if type(new)==int:
-            Atm.counter==new
+            Atm.__counter==new
         else:
             print("Not Allowed")
 
