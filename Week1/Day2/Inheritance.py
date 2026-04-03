@@ -5,6 +5,7 @@
 # Class 2 : Instructor inherits Users class
 # Class 3 : User which has methods like login and registration 
 # Note : Private members of Parent class are not inherited in child class
+#supper method is also used to inherit properties of parent class to child class
 class User:
     def login(self):
         print("login")
