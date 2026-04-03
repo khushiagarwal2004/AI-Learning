@@ -5,7 +5,14 @@
 # Class 2 : Instructor inherits Users class
 # Class 3 : User which has methods like login and registration 
 # Note : Private members of Parent class are not inherited in child class
-#supper method is also used to inherit properties of parent class to child class
+# supper method is used to inherit properties of parent class to child class
+# Types of Inheritance : 
+# Single-Level : One Parent ka ek child
+# Multi-Level : Ek dada ka bete ka beta
+# Hierarchical : Do Parent ka ek child
+# Multiple : Ek Child ke do parent 
+# Hybrid : Combination of above 4
+# MRO : Method Resolution Order : In case of conflict that class method will execute first whose inheritance is first 
 class User:
     def login(self):
         print("login")
