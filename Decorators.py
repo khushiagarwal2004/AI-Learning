@@ -1,4 +1,10 @@
 #decorators are the functions that takes another function as input and returns a new function
+# Types of decorators:
+# class method : (cls) : when we want to change class attribute 
+# instance method : (self) : when we want to change object attribute
+# static method : () : when it doesn't get effected by any class or instace
+# property decorator : when some vale change based on other parameter value so this will help in sync that change (eg: if marks of phy change then this change percentage itself w/o recalling percentage fun)
+
 def my_decorator(func):
     def wrapper(*args, **kwargs):
         print("Before function")
