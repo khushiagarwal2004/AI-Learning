@@ -53,3 +53,24 @@ print(mean)
 agg=data["Sales"].agg(["sum","min","max","mean","median","count","std","var"])
 print(agg)
 
+# Data Operations
+df1=pd.DataFrame({
+    'A':[1,2,3,4,5],
+    'B':[10,20,30,40,50],
+    'C':[100,200,300,400,500]
+})
+print(df1)
+print(df1.shape)
+print(df1.columns)
+print(df1.info())
+print(df1.describe())
+print(df1['A']+10)
+print(df1['B']**2)
+
+# OR
+
+def square(x):
+    return x**2
+df1['B']=df1['B'].apply(square)
+df1['D']=df1['B'].apply(square)
+print(df1)
