@@ -25,7 +25,9 @@ print(np.sin(a1))
 # dot product
 a2=np.arange(6).reshape(2,3)
 a3=np.arange(6,15).reshape(3,3)
+print("Dot product")
 print(np.dot(a2,a3))
+print(a2@a3)
 
 # log and exponents
 print(np.log(a1))

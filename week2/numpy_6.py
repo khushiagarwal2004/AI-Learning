@@ -19,9 +19,13 @@ for i in np.nditer(a3):
 print(np.transpose(a2))
 print(a2.T) # Syntax 2
 
+# Inverse
+A=np.array([[6,1,1],[4,-2,5],[2,8,7]])
+print("Inverse is:",np.linalg.inv(A))
+
 # Ravel : change your any dimension array to 1D array
 print(np.ravel(a2)) 
-print(a3.ravel())
+print("1D:",a3.ravel())
 
 # Stacking
 

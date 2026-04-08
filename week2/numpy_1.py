@@ -48,4 +48,33 @@ print("Giving linearly seperable range in between:\n",i)
 j = np.identity(3)
 print("Identity Matrix of order 3:\n",j)
 
+# Symmetric matrix
+A = np.array([[1, 2, 3],
+              [2, 5, 6],
+              [3, 6, 9]])
 
+is_symmetric = np.array_equal(A, A.T)
+print(is_symmetric)
+
+# Determinant
+# 3×3 example
+B = np.array([[1, 2, 3],
+              [0, 1, 4],
+              [5, 6, 0]])
+print(f"det(B) = {np.linalg.det(B):.2f}") 
+
+# Inverse 
+A = np.array([[3.0, 1.0],
+              [2.0, 4.0]])
+
+A_inv = np.linalg.inv(A)
+print("Inverse:\n", A_inv)
+
+# Eigen Values & Eigen vectors
+A = np.array([[4.0, 1.0],
+              [2.0, 3.0]])
+
+eigenvalues, eigenvectors = np.linalg.eig(A)
+
+print("Eigenvalues:", eigenvalues)
+print("Eigenvectors (columns):\n", eigenvectors)

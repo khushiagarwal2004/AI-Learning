@@ -1,7 +1,10 @@
 import numpy as np
 a1=np.arange(10,dtype=np.int32)
-a2=np.arange(12,dtype=int).reshape(3,4)
+a2=np.arange(20,dtype=int).reshape(4,5)
 a3=np.arange(8).reshape(2,2,2)
+
+# Trace
+print("Trace:",np.trace(a2)) 
 
 # indexing and slicing
 print(a1[-1])
