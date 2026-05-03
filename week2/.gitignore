@@ -1,2 +1,4 @@
 __pycache__
-fastapienv
+regressor.pkl
+ridge.pkl
+scaler.pkl
