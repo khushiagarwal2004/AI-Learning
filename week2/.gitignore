@@ -1,0 +1,4 @@
+__pycache__
+regressor.pkl
+ridge.pkl
+scaler.pkl
